@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+	/* Общие стили для страницы */
+	
+	body {
+		font-family: Arial, sans-serif;
+		line-height: 1.5;
+		margin: 0;
+		padding: 20px;
+	}
+	/* Заголовки */
+	
+	h1 {
+		color: #333;
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	
+	h2 {
+		color: #333;
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	/* Ссылки */
+	
+	a {
+		color: #007bff;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	/* Картинки */
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	/* Формы */
+	
+	form {
+		margin-bottom: 20px;
+	}
+	
+	input[type="submit"] {
+		background-color: #007bff;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		padding: 5px 10px;
+	}
+	
+	input[type="checkbox"],
+	input[type="radio"] {
+		margin-right: 5px;
+	}
+	/* Нумерованный список */
+	
+	li {
+		list-style-type: decimal;
+		margin-bottom: 10px;
+	}
+	</style>
+	<title>task1</title>
+</head>
+
+<body>
+	<h1>Люблю пиццу</h1>
+	<p><a href="kubsu.ru">Ссылка на главную страницу kubsu.ru</a></p>
+	<p><a target="_blank" href="https://www.kubsu.ru">Ссылка на главную страницу в протоколе kubsu.ru</a></p>
+	<p>
+		<a target="_blank" href="https://www.kubsu.ru"><img src="photo/1.jpeg" alt="Ссылка на внутруннюю страницу"></a>
+	</p>
+	<p><a target="_blank" href="https://u.to/eePuHw">Ссылка на внутреннюю страницу </a></p>
+	<p><a target="_blank" href="https://u.to/p_PuHw">Ссылка на главную страницу </a></p>
+	<p><a target="_blank" href="index1.2.html"> Ссылка на фрагмент</a></p>
+	<p><a target="_blank" href="https://www.kubsu.ru/ru/graduates?field_graduate_date_value%5Bvalue%5D%5Byear%5D=2023&field_graduate_faculty_target_id=309&field_graduate_dep_target_id=All"> Ссылка с тремя параметрами</a></p>
+	<p><a target="_blank" href="https://www.kubsu.ru/ru/public-portfolio/30944">Ссылка с id </a></p>
+	<h2>Относительные ссылки</h2>
+	<p><a target="_blank" href="index2.html"> Ссылка на каталог</a></p>
+	<p><a target="_blank" href="./about/index3.html"> Ссылка на каталог about</a></p>
+	<p>Любите пиццу? Если да, то вот
+		<a target="_blank" href="https://upload.tury.club/data/cb7f0669af8f1358cf44f382dc7c3944/fFxzvtUq/SomkScHX.jpg"></a>Она точно вам не навредит</p>
+	<p><a target="_blank" href=""> Ссылка на фрагмент стороннего сайта</a></p> <img src="https://city-farmer.ru/wp-content/uploads/2023/02/piczcza-1024x639.jpeg" width="800" height="600" alt="тег map">
+	<p><a href="##">Cсылка с пустым href<a></p>
+	<p><a> Cсылка без href</a></p>
+	<p><a href="https://ru.wikipedia.org/wiki/HTML5" rel="nofollow">Ссылка без доступа к поисковикам</a></p>
+	<p><a href="https://ru.wikipedia.org/wiki/HTML5" rel="noindex">Ссылка без индексации</a></p>
+	<p><a href="ftp://login:parol@http://example.com/main.html/download/file.txt">Ссылка на файл с авторизацией</a></p>
+	<form>
+		<p><strong>Ваше имя?</strong></p>
+		<p>
+			<input maxlength="30" size="45"> </p>
+		<p>Email:
+			<input type="email" name="login"> </p>
+		<p>дата рождения
+			<input type="date" id="start" name="trip-start"> </p>
+		<p><b>выберите пол</b></p>
+		<p>
+			<input name="мужской" type="radio" value="мужской">мужской</p>
+		<p>
+			<input name="женский" type="radio" value="женский">женский</p>
+		<p>
+			<input name="боевой вертолёт ми-6" type="radio" value="боевой вертолёт ми-6">боевой вертолёт ми-6</p>
+		<p>
+			<input name="не бинарная личность" type="radio" value="не бинарная личность">не бинарная личность</p>
+		<p>
+			<input type="submit" value="Выбрать"> </p>
+		<p><strong>Какой ваш любимый язык программирования:Java,JS,Python,C#</strong></p>
+		<p>
+			<select name="select" size="4" multiple>
+				<option selected value="1">Java</option>
+				<option value="2">JS</option>
+				<option value="3">C#</option>
+				<option value="4">C++</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" value="Выбрать">
+		</p>
+	</form>
+	<form>
+		<p><b>Введите вашу историю:</b></p>
+		<p>
+			<textarea name="история"></textarea>
+		</p>
+		<p>
+			<input type="submit" value="Выбрать"> </p>
+	</form>
+	<form>
+		<p>
+			<input type="checkbox" name="1" value="с п.с. ознакомлен(а)">с контрактом ознакомлен(а)</p>
+		<p>
+			<input type="submit" value="Отправить">
+			<input type="submit" value="Сохранить"> </p> <a href="#" title="Главная">Главная</a> <a href="index2.html" title="Контакты">Контакты</a> <a href="#" title="о сайте">О нас</a> </form>
+</body>
+
+</html>
